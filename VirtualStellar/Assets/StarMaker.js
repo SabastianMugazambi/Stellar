@@ -22,6 +22,7 @@ function Start () {
 	try {
         // Create an instance of StreamReader to read from a file.
         print("B");
+        print(filePath);
         var sr = new StreamReader(filePath+"");
         print("C");
         // Read and display lines from the file until the end of the file is reached.
@@ -33,7 +34,7 @@ function Start () {
         	//set positions
         	starPositions[j] = new Vector3(parseFloat(lineValues[3]), parseFloat(lineValues[4]), parseFloat(lineValues[5]));
         	
-        	color = lineValues[10];
+        	color = parseFloat(lineValues[10]);
         	if (color == 0) {
     			starColors[j] = Color32(255, 155, 176, 255);
 			} else if (color == 1) {
@@ -51,7 +52,7 @@ function Start () {
 			}
 			
 			
-        	starSizes[j] = (19.63 - parseFloat(lineValues[1]))/3.63*100;
+        	starSizes[j] = (19.63 - parseFloat(lineValues[1]))/3.63;
         	
         	j = j + 1;
             line = sr.ReadLine();
@@ -64,7 +65,8 @@ function Start () {
     }
     
 	var i = 0;
-	for(i=0; i<starPositions.length; i++) {
+	// for(i=0; i<starPositions.length; i++) {
+	for(i=0; i<500; i++) {
 		ps.Emit(starPositions[i], Vector3(0, 0, 0), starSizes[i], Mathf.Infinity, starColors[i]);
 	}
 	
