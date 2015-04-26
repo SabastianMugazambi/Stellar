@@ -5,6 +5,8 @@ Project("{8226588F-03DA-49B8-57E5-DDF8C508DD2D}") = "Motion", "Assembly-CSharp.c
 EndProject
 Project("{8226588F-03DA-49B8-57E5-DDF8C508DD2D}") = "Motion", "Assembly-CSharp-Editor.csproj", "{771C3C71-DDDE-E25B-C9F9-BAC8ACD8016C}"
 EndProject
+Project("{8226588F-03DA-49B8-57E5-DDF8C508DD2D}") = "Motion", "Assembly-UnityScript.unityproj", "{14BFA820-54DB-F871-73DA-8A1664456540}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{771C3C71-DDDE-E25B-C9F9-BAC8ACD8016C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{771C3C71-DDDE-E25B-C9F9-BAC8ACD8016C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{771C3C71-DDDE-E25B-C9F9-BAC8ACD8016C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BFA820-54DB-F871-73DA-8A1664456540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BFA820-54DB-F871-73DA-8A1664456540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BFA820-54DB-F871-73DA-8A1664456540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BFA820-54DB-F871-73DA-8A1664456540}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-		GlobalSection(MonoDevelopProperties) = preSolution
+			GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
